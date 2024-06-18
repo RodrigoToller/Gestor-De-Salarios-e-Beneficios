@@ -1,0 +1,87 @@
+.salario-area{
+
+    display: grid;
+    grid-template-columns: 2fr 1%fr;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+
+}
+.salario-area form{
+
+    transition: 1.2s;
+    background-color: var(--bege-escuro);
+    border: 2px solid var(--verde-escuro);
+    border-radius: 8px;
+    padding: 32px;
+
+}
+.titulo-horas{
+
+
+    background-color: var(--verde-escuro);
+    border-radius: 10px;
+    
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    text-align: center;
+    padding: 15px;
+
+    margin-bottom: 40px;
+}
+.horas-component{
+
+
+    transition: 1.2s;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    margin: 10px 0 10px 0;
+    
+    font-weight: 400;
+
+}
+.horas-component input, select{
+    
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid var(--verde-escuro);
+    font-weight: 400;
+    margin: 5px 0 5px 0;
+
+}
+#btnCalcularHoras{
+
+    transition: 0.7s;
+
+    width: 100%;
+    background-color: transparent;
+    color: var(--verde-escuro);
+    border: solid 1px var(--verde-escuro);
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+
+
+}
+#btnCalcularHoras:hover{
+
+    transition: 0.7s;
+    font-size: 1.2rem;
+    background-color: var(--verde-escuro);
+    color: white;
+    box-shadow: 0 0 5px var(--verde-escuro);
+
+}

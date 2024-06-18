@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/reset.css">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <title>Gestão de Ganhos - Class Solutions</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <p>CLASS Solutions</p>
+        <h2> Gestão de Ganhos  </h2>
+
+    </header>
+    <main>
+        <section class="vr-area">
+            <div class="CALCULO-VR">
+                <form action="" method="">
+                <h3 class="titulo-vr">Calculo de VR <i class="bi bi-credit-card-2-back-fill"></i></h3>
+                <div class="vr-component">
+                    <label for="valor" >Valor do VR (dia)</label>
+                    <input type="number" name="valorRefeicao" id="valorRefeicao" required>
+                </div>
+                <div class="vr-component">
+                    <label for="mes">Mês de trabalho</label>
+                    <select id="selectMeses">
+                    </select>
+                </div>
+                <div class="vr-component">
+                    <label for="feriado">O mês possui feriado?</label>
+                    <input type="checkbox" id="temFeriado" >
+                </div>
+                    <div class="vr-component">
+                    <label id="" class="control-feriado" value="">Quantos Feriados possuem?</label>
+                    <input type="text" name="valor-feriado" id="valor-feriado" class="control-feriado">
+                </div>
+                <input type="button" id="btnCalcular" value="Calcular"></button>  
+                
+            </form>
+            <div class="vr-resultado-hidden" id="resultadoView">
+                <h3 id="mes-view"> Mes </h3>
+                <p id="valor-view"> valor</p>
+            </div>
+                
+            </div>
+        </section>
+        <section class="salario-area">
+            <div class="CALCULO-HORAS">
+                <form action="" method="">
+                <h3 class="titulo-horas">Calculo de Horas <i class="bi bi-clock"></i></h3>
+                <div class="horas-component">
+                    <label for="valor" >Valor da Hora</label>
+                    <input type="number" name="valorHora" id="valorHora" required>
+                </div>
+             
+                <div class="horas-component">
+                    <label for="mes">Mês de trabalho</label>
+                    <select id="selectMesesHoras">
+                    </select>
+                </div>
+                <div class="horas-component">
+                    <label for="feriado">O mês possui feriado?</label>
+                    <input type="checkbox" id="temFeriadoHORAS" >
+                </div>
+                <div class="horas-component">
+                    <label id="" class="control-feriado-horas" value="">Quantos Feriados possuem?</label>
+                    <input type="text" name="valor-feriado-horas" id="valor-feriado-horas" class="control-feriado-horas">
+                    </div>
+                <div class="horas-component">
+                    <label for="feriado">Quantas faltas o Funcionario possui?</label>
+                    <input type="text" id="temFeriadoHoras" >
+                </div>
+              
+                <input type="button" id="btnCalcularHoras" value="Calcular"></button>
+            </div>
+        </section>
+    </main>
+    <footer>
+    </footer>
+    <script src="packs/node_modules/jquery/dist/jquery.js"></script>
+    <script src="Scripts/main.js"></script> 
+</body>
+</html>
